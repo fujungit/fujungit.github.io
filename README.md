@@ -4,9 +4,11 @@
 
 ## 1、准备工作（服务器开放端口&域名解析）
 
-> 1、VPS 一台重置好主流的操作系统 （CentOS 7+、Ubuntu 16+、Debian 8+），美国AWS网站地址:https://aws.amazon.com/登陆后注册，绑定1张银联卡(开启服务器后,可以更换1张不用的信用卡,避免乱扣费)，选择EC2，跟着免费的指引走(创建密钥下载并保存、及安全组出入站规则选择全部流量和端口) 
-> 2、记录IPv4公网ip和默认的用户名(Ubuntu是ubuntu，Debian是admin，CentOS是centos)
-> 3、域名一个，做好相关的解析，若是需要套用 CDN，请托管域名到 [Cloudflare](https://dash.cloudflare.com/) ，域名可在[NameSilo购买](https://www.namesilo.com/domain/search-domains)，有免费的隐私保护
+1、VPS 一台重置好主流的操作系统 （CentOS 7+、Ubuntu 16+、Debian 8+），美国AWS网站地址:https://aws.amazon.com/登陆后注册，绑定1张银联卡(开启服务器后,可以更换1张不用的信用卡,避免乱扣费)，选择EC2，跟着免费的指引走(创建密钥下载并保存、及安全组出入站规则选择全部流量和端口) 
+
+2、记录IPv4公网ip和默认的用户名(Ubuntu是ubuntu，Debian是admin，CentOS是centos)
+
+3、域名一个，做好相关的解析，若是需要套用 CDN，请托管域名到 [Cloudflare](https://dash.cloudflare.com/) ，域名可在[NameSilo购买](https://www.namesilo.com/domain/search-domains)，有免费的隐私保护
 
 ### 1.1、**开通**aws的服务器**后**设置安全组（其他平台服务器同理）
 
