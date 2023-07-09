@@ -292,31 +292,31 @@ wget -N --no-check-certificate "[https://raw.githubusercontent.com/chiakge/Linux
 
   安装完毕后用`域名:端口`访问x-ui后台，检查新版本并切换，配置证书的公钥和密钥的路径，然后重启面板，用`https://域名:端口`就可访问x-ui后台了，节点配置及功能方面，可看看这 [视频教程](https://v2rayssr.com/go?url=https://youtu.be/6ztPETEiY8M)
 
-    ![](https://secure2.wostatic.cn/static/5ZCK6arUwcbEYXFYEvw2Qj/image.png)
+    ![](https://secure2.wostatic.cn/static/5ZCK6arUwcbEYXFYEvw2Qj/image.png?auth_key=1688902244-fQEtBr7EsTxsmfsbGVJQ8K-0-af3b18cf3b942eca7f61fd87bccf3ee6)
 
-    ![](https://secure2.wostatic.cn/static/7DeCYZKQJtYLzdD2o3Gix2/image.png)
+    ![](https://secure2.wostatic.cn/static/7DeCYZKQJtYLzdD2o3Gix2/image.png?auth_key=1688902244-vm4Rsv9cKQJ3CexMUYjGXd-0-3b4b0ebe2ecb1ed170db17b42ed3cda3)
 
   或者用下面这两个也可以
 
-    ![](https://secure2.wostatic.cn/static/smi3qnD9sr3emTH4XRcWCJ/image.png)
+    ![](https://secure2.wostatic.cn/static/smi3qnD9sr3emTH4XRcWCJ/image.png?auth_key=1688902244-c5HtGcu16cwy7eWxXLEnQu-0-844d25f0de0092f49d5f81143619b8e9)
 
   ### 7.1、添加节点
 
   - vless
 
-      ![](https://secure2.wostatic.cn/static/6GqREFXRFMGLzBGM1EDCi8/image.png)
+      ![](https://secure2.wostatic.cn/static/6GqREFXRFMGLzBGM1EDCi8/image.png?auth_key=1688902244-h1oLVGwVViQW691c3M3hMy-0-24111a24a4e82566a624656ebdbece77)
 
       
 
       有的版本是这种
 
-        ![](https://secure2.wostatic.cn/static/tb2TVoUNtMPXbTLvd43fw3/image.png)
+        ![](https://secure2.wostatic.cn/static/tb2TVoUNtMPXbTLvd43fw3/image.png?auth_key=1688902244-ohSoH6MyJ47uA2YRXvmXqQ-0-ca8156cfad159d38b885c14a4382c95c)
 
-        ![](https://secure2.wostatic.cn/static/dx4V1AYwEXZwAKWyaNYecB/image.png)
+        ![](https://secure2.wostatic.cn/static/dx4V1AYwEXZwAKWyaNYecB/image.png?auth_key=1688902245-t8L5AVRfNWjerQnnEGZDnU-0-54e353431fa217f09bf9b1fbc1aa3f2c)
 
   ### 7.2、复制节点到代理工具使用
 
-    ![](https://secure2.wostatic.cn/static/hpyDQy4aufUpsEFknt7bPy/image.png)
+    ![](https://secure2.wostatic.cn/static/hpyDQy4aufUpsEFknt7bPy/image.png?auth_key=1688902245-f8tPhN86frPsxFsRcS1aq6-0-0f385f0f890e48fd9c7576286af3bef9)
 
 ---
 
@@ -359,17 +359,17 @@ source <(curl -sL [https://git.io/trojan-install](https://git.io/trojan-install)
 
   出现选择时一直选1就行了，到下面这一步直接回车
 
-    ![](https://secure2.wostatic.cn/static/gKYUdg1SuSb5Qk3Aut9tkM/image.png)
+    ![](https://secure2.wostatic.cn/static/gKYUdg1SuSb5Qk3Aut9tkM/image.png?auth_key=1688902245-mkMc3KmrgZAGhnGcTT9B5n-0-4284aebfa4dbdc6fc5a37ce822acbf32)
 
   直接回车
 
-    ![](https://secure2.wostatic.cn/static/dCoKFecHj9JASsSL4KzDxf/image.png)
+    ![](https://secure2.wostatic.cn/static/dCoKFecHj9JASsSL4KzDxf/image.png?auth_key=1688902245-ak9T8ei4YxbAHWdSnZEocZ-0-06eced252803e7ed8569f647225fd0f1)
 
   
 
   再直接回车
 
-    ![](https://secure2.wostatic.cn/static/8zqJw8hi1Kr1TyU4jFFjCH/image.png)
+    ![](https://secure2.wostatic.cn/static/8zqJw8hi1Kr1TyU4jFFjCH/image.png?auth_key=1688902245-rvmWUh7NUkk1CPLk6s3onJ-0-f3b68e914719442235991362b8b9b2ce)
 
   BBRplus加速：
 
@@ -377,9 +377,9 @@ source <(curl -sL [https://git.io/trojan-install](https://git.io/trojan-install)
 wget -N --no-check-certificate "[https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh](https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh)" && chmod +x [tcp.sh](http://tcp.sh) && ./tcp.sh
 ```
 
-  进去后台设置密码（记好）并登录，用户名是admin
+  进去后台设置密码并登录，用户名是admin
 
-    ![](https://secure2.wostatic.cn/static/cnSYdVtTC1BWCS1LC7V8DQ/image.png)
+    ![](https://secure2.wostatic.cn/static/cnSYdVtTC1BWCS1LC7V8DQ/image.png?auth_key=1688902245-5NZfESDZ9ctYVdFwTVhuqL-0-f62e040c9ff61dfe824a902767b49f48)
 
   **搭建结束**
 
