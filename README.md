@@ -5,7 +5,7 @@
   - 服务器版本：CentOS 7+、Ubuntu 16+、Debian 8+
   - [亚马逊WAS](https://aws.amazon.com/)可白嫖。注册后绑定1张银联卡(开启服务器后,可以更换1张不用的信用卡,避免乱扣费)，选择EC2，跟着免费的指引走(创建密钥下载并保存、及安全组出入站规则选择全部流量和端口)。**开通**aws的服务器**后**设置安全组（其他平台服务器同理）
 
-      ![](https://secure2.wostatic.cn/static/jQaffT1x1xSZx6VknVE4oV/image.png?auth_key=1688898013-i8ZXpNXBKpkxF25ZcDY3To-0-e59f7553de4f3dc9dfc6d733e390901e)
+      ![](https://secure2.wostatic.cn/static/jQaffT1x1xSZx6VknVE4oV/image.png?auth_key=1688902140-idZocJpuTQ6hXPVNPTkoq7-0-37a45daf65a49f37e015f3cb9ce658bd)
   - 亚马逊的如果ip被墙，可以通过操作【停止实例-启动现有实例】的方法即可更换ip恢复，系统不会被重置，只需重新把新的ip解析过来就好
   - **记录IPv4公网ip和默认的用户名以及密码，如果你服务器支持默认root+密码登陆可直接跳至第4步开始，具体以你服务器给出的为主**
       - aws默认只能用创建的密钥文件登陆，后面步骤会开启root账号和密码登陆
@@ -17,29 +17,29 @@
 
     #### 1.2.1、进Cloudflare添加域名
 
-      ![](https://secure2.wostatic.cn/static/4eMgzMbduvCTH2fbSH3yzN/image.png?auth_key=1688898013-tfKseFtjjXbkCxMG1Xq1Vb-0-4e9b5956cb242b32fc463dba4972aa09)
+      ![](https://secure2.wostatic.cn/static/4eMgzMbduvCTH2fbSH3yzN/image.png?auth_key=1688902140-eRgigM9NPAhcdqyAEXfZGX-0-2d9e6eff3fe37c604fc4f958f2132d31)
 
     #### 1.2.2、**复制Cloudflare的提供的服务器**
 
-      ![](https://secure2.wostatic.cn/static/fN7XEGJuxEEd8QkamqS1AF/image.png?auth_key=1688898013-ncSciC8ZHTzGEaxEtVmC6w-0-7f44aa7e1c8bfab82a3b8f157ee987af)
+      ![](https://secure2.wostatic.cn/static/fN7XEGJuxEEd8QkamqS1AF/image.png?auth_key=1688902140-r3Jg33E2Zg8H9BZpE7NbbK-0-0191dd20dc894de769c69d090e33070d)
 
     #### 1.2.3、**去NameSilo域名管理页面点击DNS管理图标进去**，**删除NameSilo的默认服务器，替换为CloudFlare提供的服务器**
 
-      ![](https://secure2.wostatic.cn/static/hCA4kuuJC4sj4fyJSXJ2mi/image.png?auth_key=1688898013-3MmU9wCBXwqiYjjDa7j9bm-0-68eb61e9b0f5c136e667ffe17888b304)
+      ![](https://secure2.wostatic.cn/static/hCA4kuuJC4sj4fyJSXJ2mi/image.png?auth_key=1688902139-wVPqroqZgNHuH9bBcX1FxB-0-f1a1ad991e4a1d0929538d7cf2c37362)
 
-      ![](https://secure2.wostatic.cn/static/8jyEvR6NkgPqWjpwWboASb/image.png?auth_key=1688898013-5FvUQ6dn5Hp5N6fTQAHhoz-0-6050154c7e01ff4e588eacac4bd89607)
+      ![](https://secure2.wostatic.cn/static/8jyEvR6NkgPqWjpwWboASb/image.png?auth_key=1688902139-pRuQzdWNPwUt8mGACTLaBA-0-81aefed0020b54c84492c1a87acbbbaa)
 
     
 
     #### 1.2.4、回到Cloudflare查看是否添加成功
 
-      ![](https://secure2.wostatic.cn/static/eborJexYUxFXZxajxGiEn7/image.png?auth_key=1688898013-2XsF5j42d1W9LSftDKuLvo-0-9288f42ab13beff8898406a4fbf1a539)
+      ![](https://secure2.wostatic.cn/static/eborJexYUxFXZxajxGiEn7/image.png?auth_key=1688902139-neYsqHR2TBBgXYSyESUjMH-0-172c22ba5de55a0c4ed247e146b992e4)
 
     
 
     #### 1.2.5、添加成功后点击添加记录解析
 
-      ![](https://secure2.wostatic.cn/static/nW9dmG11hLEQwcNrC7ZZyR/image.png?auth_key=1688898013-4s6WQW4CdA7eWbGd3JARH-0-b8df0b4621486b21e11e4344e349a8e6)
+      ![](https://secure2.wostatic.cn/static/nW9dmG11hLEQwcNrC7ZZyR/image.png?auth_key=1688902140-bamGRXj82Nqky6VveaenfT-0-53ad490b61a3fcfaf1fb4484308af870)
 
     
 
@@ -47,7 +47,7 @@
 
     (可以添加多个二级域名解析，@就是默认的主域名解析)
 
-      ![](https://secure2.wostatic.cn/static/n7Jj4ofCLiACDzyrTcT5A4/image.png?auth_key=1688898013-cudotMf2NUuVvcKx5ABZn9-0-d15c782f1f6eecee3b543702a2050f64)
+      ![](https://secure2.wostatic.cn/static/n7Jj4ofCLiACDzyrTcT5A4/image.png?auth_key=1688902140-sFzzn6sUp8Ryaf9wRqgsdg-0-5e01fe486c5ffea098790ff7aec726c2)
 
     
 
@@ -65,11 +65,11 @@ ping vps.emjj.top -t
 
   - 打开ssh工具FinalShell客服端，首次用默认用户+端口(一般是22)+密钥文件登陆进入
 
-      ![](https://secure2.wostatic.cn/static/7pR26LrteKzhKmphJKBtL8/image.png?auth_key=1688898013-jAPmXvRZGTwWmA61W3BFf3-0-931ada8781965f7b3d8f06be5dfbf0bd)
+      ![](https://secure2.wostatic.cn/static/7pR26LrteKzhKmphJKBtL8/image.png?auth_key=1688902139-nUBCDsZazeu3F6aShzHf9u-0-98ff3cefc22e84e72cd960c82af0b108)
 
-      ![](https://secure2.wostatic.cn/static/8NG9pWwwjSUEmSUHLGYkxo/image.png?auth_key=1688898013-9x95Tp4QC6mw5LU8UbHYaA-0-edcb3b5ce36c40a6c9efa6c30962272b)
+      ![](https://secure2.wostatic.cn/static/8NG9pWwwjSUEmSUHLGYkxo/image.png?auth_key=1688902140-c2QkTG2rYJceLsDf4DL5tY-0-8e193c2fe69e3591d4a081cec2e26777)
 
-      ![](https://secure2.wostatic.cn/static/ebM9hvvs2t7q26aU8MES3y/image.png?auth_key=1688898013-3ZjpPoH52foKX9286ksLzT-0-bf1a443a71e146681065b06e33ecf98d)
+      ![](https://secure2.wostatic.cn/static/ebM9hvvs2t7q26aU8MES3y/image.png?auth_key=1688902139-d2otUuZUQogxTGUbmafLJN-0-22bcb1c0d8a9e8b0b62981ff150ee055)
 
   ### 2.2、设置root用户的密码 ,需设置2次密码（若后续root账户登不上，只需重复这1步即可）
 
@@ -101,7 +101,7 @@ vim /etc/ssh/sshd_config
 
   如果出现E325: ATTENTION错误，按下图即可解决
 
-    ![](https://secure2.wostatic.cn/static/4n7wfP768xXeEMVQvYNqYd/image.png?auth_key=1688898013-8UWqKh2i9NPf1qvrkbSK5z-0-41189b692725bb1cb087c415fc61d67b)
+    ![](https://secure2.wostatic.cn/static/4n7wfP768xXeEMVQvYNqYd/image.png?auth_key=1688902139-3t64CndYrQs5sZCSBUeMtZ-0-e0f76c2cbd329a7025364fc0a18ad686)
 
   ### 2.5、重启sshd服务
 
@@ -121,7 +121,7 @@ passwd ubuntu
 
   - 现在就可以用root+密码重新登陆了
 
-      ![](https://secure2.wostatic.cn/static/i5WiYFWGJt7YPQqHUWbRjb/image.png?auth_key=1688898013-f2dZsU4QM8Y3k95BQGdWFH-0-cc0daaff7e2f4cf79e380a648dd6e0b8)
+      ![](https://secure2.wostatic.cn/static/i5WiYFWGJt7YPQqHUWbRjb/image.png?auth_key=1688902139-sjgGS9es2cBdR1cVBPNjth-0-72fd1213faf36f9bd67c22e705f8728e)
 
 ## 3、开启一下服务器的防火墙（如连接正常的话可跳过）
 
@@ -152,7 +152,7 @@ apt-get purge netfilter-persistent
 
 ```
 
-  ![](https://secure2.wostatic.cn/static/wc1BUw49CD2teajbHGeftq/image.png?auth_key=1688898013-5KdamAgHrWH4t5Y1uC4Lm5-0-9420e9598b5ff5d0419a71f5839fab11)
+  ![](https://secure2.wostatic.cn/static/wc1BUw49CD2teajbHGeftq/image.png?auth_key=1688902140-dxaZHsLaDVvM6aXz5X3MU9-0-ddc8b02a19a3ad0f600b86f72998cacc)
 
   是用于从系统中彻底移除 nonfilter-persistent 软件包，这个软件包在 Debian/Ubuntu 系统上持久化iptables 规则。
 
@@ -169,7 +169,7 @@ apt-get purge netfilter-persistent
 
   ### 4.1、用root用户
 
-    ![](https://secure2.wostatic.cn/static/i5WiYFWGJt7YPQqHUWbRjb/image.png?auth_key=1688898013-iAoRMSBYBgGyyEiV8Sb58U-0-e4948401d3e658055240962f7ab042e8)
+    ![](https://secure2.wostatic.cn/static/i5WiYFWGJt7YPQqHUWbRjb/image.png?auth_key=1688902139-uarU53wGYviw9pBgNrBKG8-0-9b026f49534a286ff55f864816cd9304)
 
 ### 4.2、安装 Acme 脚本
 
@@ -239,11 +239,11 @@ bash <(curl -Ls [https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/inst
 
   然后输入y回车，设置自己的用户名 密码 端口
 
-    ![](https://secure2.wostatic.cn/static/w9R5zjKG1pS8qUgesUfSFT/image.png?auth_key=1688898014-bWAs8ormEus5EpbjEeTAY9-0-e7c13a7d9ed8da0f47603347f1370a84)
+    ![](https://secure2.wostatic.cn/static/w9R5zjKG1pS8qUgesUfSFT/image.png?auth_key=1688902140-nGD7Hag5agJxfLJ4PVCMNV-0-c0b2a76cd1a6450eb8076cac5ce333df)
 
   X-ui安装完成
 
-    ![](https://secure2.wostatic.cn/static/fE15HPF8PuzS6XERkCjuX5/image.png?auth_key=1688898014-5fsqznzou3BNrpkevtCCYV-0-a17048908f684c3771bdc12241576796)
+    ![](https://secure2.wostatic.cn/static/fE15HPF8PuzS6XERkCjuX5/image.png?auth_key=1688902140-nG8Y8G6iM4CX9ziJWpCuFb-0-869d3e015b2b4814d6ec1ba6a667ac3e)
 
 ### 5.3、放行端口（服务器开放了所有端口的可跳过）
 
@@ -262,11 +262,11 @@ wget -N --no-check-certificate "[https://raw.githubusercontent.com/chiakge/Linux
 
   ### 6.2、输入2回车安装
 
-    ![](https://secure2.wostatic.cn/static/qhXoFPxXYNzGY6sKbaVSSz/image.png?auth_key=1688898014-ndnVniXuGBb2PF9LJc2qt9-0-1e19e500da4fc316c621d97ef9c0fc4d)
+    ![](https://secure2.wostatic.cn/static/qhXoFPxXYNzGY6sKbaVSSz/image.png?auth_key=1688902140-mNCSxVpKSLPRBFVp6rVSG6-0-30c43287f31bb7698678f78757b266e5)
 
   ### 6.3、如出现下图，选择No回车
 
-    ![](https://secure2.wostatic.cn/static/ovNsb3G1dFC1JUcdXyLQQ5/image.png?auth_key=1688898014-oqVAfn8xAw6MEBhr87kNyb-0-6e4b80f63c104ef96436aac9ef401710)
+    ![](https://secure2.wostatic.cn/static/ovNsb3G1dFC1JUcdXyLQQ5/image.png?auth_key=1688902140-8uMScqf1VNNW4jFw1FM5xn-0-38d28e86d6fe3e9f349c7c17190e3476)
 
   ### 6.4、安装完成输入Y重启后，再运行
 
@@ -276,11 +276,11 @@ wget -N --no-check-certificate "[https://raw.githubusercontent.com/chiakge/Linux
 
   ### 6.5、输入7启动BBRplus加速
 
-    ![](https://secure2.wostatic.cn/static/mgTjaX2CRZXh5bqBMrdVHH/image.png?auth_key=1688898014-5bnYgU9pg2CpQjUUg2qeq-0-2a00991cf7d3cb97053e435348e50d8e)
+    ![](https://secure2.wostatic.cn/static/mgTjaX2CRZXh5bqBMrdVHH/image.png?auth_key=1688902140-afTRN1X546V7j8pF4TkikV-0-21d7a42456f15a56da0df60d921c2efa)
 
   ### 6.6、再次运行./tcp.sh检查是否成功
 
-    ![](https://secure2.wostatic.cn/static/w3GA2Xc3kaeXG7dCuqQ5wJ/image.png?auth_key=1688898014-jrrpUdAJayDDEgsttj9MnH-0-97d248f9881d509bdcf6d4644342d4d7)
+    ![](https://secure2.wostatic.cn/static/w3GA2Xc3kaeXG7dCuqQ5wJ/image.png?auth_key=1688902140-nRPYK7mfnkkAu8soygmFzX-0-24a4e4e741b9049a1b76678044718af5)
 
   **至此加速成功**
 
@@ -377,7 +377,7 @@ source <(curl -sL [https://git.io/trojan-install](https://git.io/trojan-install)
 wget -N --no-check-certificate "[https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh](https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh)" && chmod +x [tcp.sh](http://tcp.sh) && ./tcp.sh
 ```
 
-  进去后台设置密码并登录，用户名是admin
+  进去后台设置密码（记好）并登录，用户名是admin
 
     ![](https://secure2.wostatic.cn/static/cnSYdVtTC1BWCS1LC7V8DQ/image.png)
 
